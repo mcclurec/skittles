@@ -10,8 +10,7 @@ var skittles = {
 	twelfthImg: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDA5IDQwOSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNDA5IDQwOSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8cG9seWdvbiBmaWxsPSIjMEIyMzQzIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iNiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjMsNDAuMiAzOS4zLDMgMTIzLjMsMyAxMjMuMywzMjcuMiANCgkJMTU5LjMsMzI3LjIgMTU5LjMsNDA2IDMsNDA2IDMsMzI2LjIgNDEuMywzMjYuMiA0MS4zLDkzLjIgMyw5My4yIAkiLz4NCgk8cG9seWdvbiBmaWxsPSIjMEIyMzQzIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iNiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjE4Mi44LDExNi40IDE4Mi44LDQ1LjcgMjIxLjUsMyANCgkJMzg1LjgsMyA0MDYsMjYuNCA0MDYsMjIwLjcgMzg4LjEsMjM3LjcgMjY2LjMsMjM3LjcgMjY2LjMsMzI2LjIgMzQ2LjMsMzI2LjIgMzQ2LjMsMjk5LjIgNDA2LDI5OS4yIDQwNiw0MDYgMTgzLjMsNDA2IA0KCQkxODMuMywyMDIuMiAyMjcuMywxNTYgMzQ2LjMsMTU2IDM0Ni4zLDgzLjIgMjY2LjMsODMuMiAyNjYuMywxMTYuNyAJIi8+DQo8L2c+DQo8Zz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMzEzLjMsMjY1LjZjLTE0LjQtMi44LTMzLjMtMy43LTQxLjMtMy43SDgxLjljLTExLjcsMC0yNC4xLDAtMzAuNC05LjZjLTYuMy05LjgtMi44LTE5LjQsNy44LTM4LjcNCgkJYzAuOS0xLjMsMzMuNS02Mi42LDMzLjUtNjIuNnMzLjMsNC4xLDYuNyw2LjdjMy4zLDIuNiw2LjcsMy45LDE1LjksMy45YzE2LjEsMCwxMjAtMC4yLDEyMS4xLTAuMmMyMS4xLDAsNDIuNCwyLjIsNTYuMywxNy40DQoJCWM3LjIsMC45LDMwLjIsMy45LDQ5LjQsMTNjMTEuMSw1LjQsMTguNSwxMy4zLDIxLjMsMjMuMWMwLjksMywxLjMsNi4xLDEuMyw5LjRjMCw5LjEtMy41LDE5LjQtMTAuMiwzMA0KCQljLTE0LjQsMjIuNC0yNy42LDMwLjItMjguMSwzMC43Yy04LDUuNy0xNi4xLDYuMS0xNi4xLDYuMXM3LjItOCw5LjYtMTYuMUMzMjIsMjY2LjcsMzEzLjMsMjY1LjYsMzEzLjMsMjY1LjYiLz4NCgk8cGF0aCBmaWxsPSIjMEEyMzQzIiBkPSJNMzM5LjYsMTk2LjdjLTIxLjctMTAuNC00OS42LTEyLjYtNDkuNi0xMi42Yy0xMi4yLTE0LjgtMzIuOC0xNy4yLTUzLjUtMTcuMmMwLDAtMTA0LjgsMC4yLTEyMS4xLDAuMg0KCQljLTE4LjksMC0yMC45LTcuNi0yMC45LTcuNmwtMjUuNyw0Ny44SDEzNWMyMC45LDAsMjEuNy0yLjIsMzUuNy0xMi4yYzE0LjYtMTAuOSwyNi4zLTE0LjYsNDAuMi0xNC42YzEzLjksMCwyMy4xLDMsMzguNSwxMA0KCQljMTUuNCw2LjcsMjMuNSwxMC4yLDMyLjgsNi4zYzAsMC03LjIsOS44LTI5LjEsMC43Yy0yMS43LTkuMS0yNy42LTExLjEtNDAuOS0xMS4xYy0xMywwLTI4LjEsNi4zLTQ2LjgsMjVsMjIuNCwxOA0KCQljMCwwLTUuMiw4LTguNSwxM2MtMy41LDUtMyw4LjUtMS4zLDExLjFjMS43LDIuNCw0LjEsMy43LDEyLjQsMy43czc0LjYtMC4yLDgyLTAuMmM2LjUsMCwyNi41LDAuNyw0Mi40LDMuNw0KCQljMjAuOSw0LjEsNy40LDIxLjcsNy40LDIxLjdzMTMuOS05LjEsMjcuOC0zMC45QzM2NS4zLDIyNi45LDM2MS40LDIwNy4xLDMzOS42LDE5Ni43Ii8+DQoJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTMwMS4xLDIwMC42Yy05LjgtMi40LTEuNS04LTEuNS04Yy0xNC4xLDIuOC0xOS42LDE0LjYtMjAuNywxNy44Yy0wLjIsMC40LTAuNCwwLjktMC43LDEuMw0KCQljLTcuOCwxNS45LTE1LDE1LTI4LjUsMTVoLTIzLjFjLTE4LjcsMC0yNy40LDkuNC0zNi4zLDI1aDEwLjRjOS42LTE0LjQsMTctMTguMywzNS45LTE5LjRjNDMuNSwwLDc4LjMsMTIuNCw5Ni42LDIyDQoJCUMzNTkuNiwyMTAuNiwzMjAuOSwyMDMuNCwzMDEuMSwyMDAuNiIvPg0KCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yMjAuMiwyNTEuNWM0LjgtNy40LDE0LjgtOS44LDMwLjctOC45YzM5LjQsMi4yLDYyLDEwLDc5LjYsMTYuNWMtMjEuNy0xMi42LTYwLjItMjEuNy04Ny4yLTIxLjcNCgkJYy0xMywwLTI0LjYsMi40LTMxLjMsMTQuMUgyMjAuMnoiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjYyLjQsMjA4Yy01LjIsNy4yLTEyLDkuNi0zMS4xLDguM2MtMjIuNC0xLjUtMTYuNS0xMC45LTEzLjktMTUuNGwwLDBjMC43LTEuMywyLTMuNSwzLjMtNS45DQoJCWMtMTcuMi0xLjEtMjkuNiwxMi4yLTI5LjYsMTIuMmMxMi44LDEyLjYsMjEuMywxMy45LDMyLjgsMTMuOWgyMS41YzIwLDAsMjQuOC04LjksMjYuNy0xM0MyNjguNSwyMDguNCwyNjUuNSwyMDguNCwyNjIuNCwyMDgiLz4NCgk8cGF0aCBmaWxsPSIjNkJCRTQ1IiBkPSJNMjUyLjksMjA1LjhjLTAuNC0wLjItMC45LTAuNC0xLjMtMC40Yy0yLDIuMi01LjQsMy4zLTguNywyLjhjLTQuMy0wLjctNi43LTMuNy01LjctNw0KCQljMC4yLTAuNCwwLjQtMC45LDAuNy0xLjNjLTIuMi0wLjktNC4zLTEuNy02LjUtMi40Yy00LjMsNy4yLTcsMTIsOC4zLDEzLjNjOS42LDAuOSwxMi4yLTAuOSwxNC4xLTQuMw0KCQlDMjUzLjUsMjA2LjMsMjUzLjMsMjA2LDI1Mi45LDIwNS44Ii8+DQoJPHBhdGggZmlsbD0iI0E2QUNBRiIgZD0iTTE3NS41LDIzMy4yYy04LDEzLjctMTEuMSwxNy01LjQsMjMuNUg4MS45Yy0xMywwLTIxLjMtMC40LTI1LjctNy4yYy00LjEtNi41LTMuMy0xMi42LDgtMzMuMWg3NC44DQoJCWMxMi44LDAsMTYuMSwwLjcsMjMuMyw2LjFDMTY5LjEsMjI4LDE3NS41LDIzMy4yLDE3NS41LDIzMy4yIi8+DQo8L2c+DQo8L3N2Zz4NCg==",
 	maxSize: 50,		//In pixels
 	minSize: 30,		//In pixels
-	skittleCount: 50,
-	fallDuration: 1,	//In seconds
+	skittleCount: 100,
 
 	random: function(min, max, decimal){
 		if (decimal){
@@ -21,46 +20,52 @@ var skittles = {
 		}
 	},
 
-	spawnSkittle: function(){
-		var skittle = document.createElement("img"),
-			size = skittles.random(skittles.minSize, skittles.maxSize);
-		skittle.src = skittles.skittleImg[skittles.random(0, skittles.skittleImg.length-1)];
-		skittle.className = "skittle";
-		skittle.style.width = size + "px";
-		skittle.style.left = skittles.random(0, (window.innerWidth - size)) + "px";
-		skittle.onload = function(){
-			setTimeout(function(){
-				document.body.removeChild(skittle);
-			}, skittles.fallDuration * 1000 * 1.2);
-		};
-		document.body.appendChild(skittle);
-	},
-
 	twelfthMan: function(){
-		var twelfth = document.createElement("img");
-		twelfth.src = skittles.twelfthImg;
-		twelfth.id = "twelfthMan";
-		// twelfth.onclick = skittles.stop;
-		document.body.appendChild(twelfth);
+		var wrapper = document.createElement("div"),
+			lombardi = document.createElement("div");
+		wrapper.id = "twelfthMan";
+		lombardi.className = "lombardi";
+		wrapper.appendChild(lombardi);
+
+		for (var i = 0; i < skittles.skittleCount; i++) {
+			var skittle = document.createElement("img"),
+				size = skittles.random(skittles.minSize, skittles.maxSize);
+			skittle.src = skittles.skittleImg[skittles.random(0, skittles.skittleImg.length-1)];
+			skittle.className = "skittle";
+			skittle.setAttribute('style',
+				'width: ' + size + 'px;'+
+				'left: ' + skittles.random(0, (window.innerWidth - size)) + 'px;'+
+				'-webkit-animation-delay: ' + (2 / skittles.skittleCount * i) + 's;'+
+				'animation-delay: ' + (2 / skittles.skittleCount * i) + 's;'
+			);
+			wrapper.appendChild(skittle);
+		};
+
+		wrapper.onclick = this.stop;
+		document.body.appendChild(wrapper);
 	},
 
 	fadeOut: function(element){
-		element.className = element.className + " fadeOut";
-		setTimeout(function(){
-			element.parentNode.removeChild(element);
-		}, 300);
+		if (element){
+			element.className = element.className + " fadeOut";
+			setTimeout(function(){
+				element.parentNode.removeChild(element);
+			}, 350); //Same time as CSS below
+		}
 	},
 
 	injectCss: function(){
-		if (!document.getElementById("skittlesStyle")){
+		if (!document.getElementById("skittlesStyles")){
 			var css =
 				'@-webkit-keyframes skittleFall {'+
-					'0% { top: -' + skittles.maxSize + 'px; }'+
-					'100% { top: 100%; }'+
+					'0% { -webkit-transform: translate3d(0,0,0); }'+
+					'50% { -webkit-transform: translate3d(0,110vh,0); }'+
+					'100% { -webkit-transform: translate3d(0,110vh,0); }'+
 				'}'+
 				'@keyframes skittleFall {'+
-					'0% { top: -' + skittles.maxSize + 'px; }'+
-					'100% { top: 100%; }'+
+					'0% { transform: translate3d(0,0,0); }'+
+					'50% { transform: translate3d(0,110vh,0); }'+
+					'100% { transform: translate3d(0,110vh,0); }'+
 				'}'+
 				'@-webkit-keyframes fadeIn {'+
 					'0% { opacity: 0; }'+
@@ -70,57 +75,64 @@ var skittles = {
 					'0% { opacity: 0; }'+
 					'100% { opacity: 1; }'+
 				'}'+
+				'#twelfthMan {'+
+					'cursor: pointer;'+
+					'position: fixed;'+
+					'top: 0;'+
+					'left: 0;'+
+					'right: 0;'+
+					'bottom: 0;'+
+					'z-index: 99;'+ // One less than my main nav z-index
+				'}'+
+				'.lombardi {'+
+					'position: absolute;'+
+					'top: 10%;'+
+					'left: 10%;'+
+					'right: 10%;'+
+					'bottom: 10%;'+
+					'background: url('+ this.twelfthImg +') no-repeat 50% 50%;'+
+					'background-size: contain;'+
+					'-webkit-animation: fadeIn .3s ease both;'+
+					'animation: fadeIn .3s ease both;'+
+				'}'+
 				'.skittle {'+
 					'position: fixed;'+
-					'top: -' + skittles.maxSize + 'px;'+
-					'z-index: 10000;'+
-					'-webkit-animation: skittleFall 1s cubic-bezier(.45,0,1,1);'+
-					'animation: skittleFall 1s cubic-bezier(.45,0,1,1);'+
-					'-webkit-animation-fill-mode: both;'+
-					'animation-fill-mode: both;'+
-				'}'+
-				'#twelfthMan {'+
-					'position: fixed;'+
-					'top: 50%;'+
-					'left: 50%;'+
-					'max-height: 80%;'+
-					'max-width: 66%;'+
-					'-webkit-transform: translate(-50%, -50%);'+
-					'transform: translate(-50%, -50%);'+
-					'-webkit-animation: fadeIn .3s ease;'+
-					'animation: fadeIn .3s ease;'+
-					'-webkit-animation-fill-mode: both;'+
-					'animation-fill-mode: both;'+
+					'top: -' + this.maxSize + 'px;'+
+					'-webkit-animation: skittleFall 2s cubic-bezier(.45,0,1,1) infinite both;'+
+					'animation: skittleFall 2s cubic-bezier(.45,0,1,1) infinite both;'+
 				'}'+
 				'.fadeOut {'+
 					'transition: opacity .3s ease;'+
 					'opacity: 0;'+
 				'}',
-				skittleAnimation = document.createElement( 'style' );
-				skittleAnimation.id = "skittlesStyle";
+				skittleStyles = document.createElement('style');
+				skittleStyles.id = "skittlesStyles";
 
-			skittleAnimation.innerHTML = css;
-			document.getElementsByTagName( 'head' )[ 0 ].appendChild( skittleAnimation );
+			skittleStyles.innerHTML = css;
+			document.getElementsByTagName('head')[ 0 ].appendChild(skittleStyles);
 		}
 	},
 
-	skittlesInterval: null,
+	isRunning: false,
 	start: function(){
-		skittles.injectCss();
-		skittles.twelfthMan();
-		skittles.skittlesInterval = setInterval(skittles.spawnSkittle, skittles.fallDuration * 1000 / skittles.skittleCount);
-		setTimeout(function(){
-			window.onclick = skittles.stop;
-		}, 100);
+		this.injectCss();
+		if (!this.isRunning){
+			this.twelfthMan();
+			document.addEventListener('keydown', skittles.stop);
+			this.isRunning = true;
+		}
 	},
 
-	stop: function(){
-		clearInterval(skittles.skittlesInterval);
+	stop: function(e){
+		if (e.type === 'keydown' && e.keyCode !== 27){
+			return;
+		}
 
 		var twelve = document.getElementById('twelfthMan');
 		skittles.fadeOut(twelve);
 
-		window.onclick = null;
+		document.removeEventListener('keydown', skittles.stop);
+		skittles.isRunning = false;
 	},
 
 };
